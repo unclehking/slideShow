@@ -1,0 +1,300 @@
+
+@import "common"
+
+header.top
+	p relative;
+	.logo
+		d b
+		w-h 421px 70px
+		background url("../../images/logo.jpg")
+		margin 10px 0 10px 0
+	.tPhone
+		w-h 200px 56px
+		p absolute 12px 0
+		background url("../../images/phone.png") left 2px no-repeat
+		padding-left 56px
+		& > *
+			font-size 16px
+			font-weight bold
+			color #424140
+		span
+			color #d40b04
+			d b
+			font-size 24px
+			margin-top 5px
+
+nav.topNav
+	height 74px
+	background-color #dc0606
+	box-shadow 0 6px 8px rgba(0, 0, 0, 0.4)
+	z-index 2
+	p relative
+	ul.cWrap
+		list-style none
+		text-align center
+		li a
+			d b
+			w-h 100% 100%
+			color #fff
+			font-weight bold
+			font-size 16px
+		& > li
+			w-h 120px 100%
+			line-height 74px
+			f l
+			margin-right 12px
+			p relative
+			&:after
+				d b
+				p absolute 10px -7px
+				content " "
+				width 2px
+				height 51px
+				background url("../../images/navLine.png") center center no-repeat
+			&:nth-last-child(1):after
+				d n
+			&.active
+				background-color #e37c17
+			.subNav
+				d n
+				overflow hidden
+				li
+					height 50px
+					line-height @height
+					border-top 1px solid #E24A00
+					margin-top -1px
+					&:hover
+						background-color rgba(0, 0, 0, 0.05)
+			&:hover
+				background-color #e37c17
+				.subNav
+					d b
+.cWrap
+	width 1200px
+	margin 0 auto
+	
+.banner
+	p relative
+	text-align center
+	height 391px
+	padding-top 1px
+	z-index 1
+	.pointer
+		margin 360px auto 0 auto
+		color #ff0000
+		height 24px
+		p relative
+		z-index 998
+		li
+			display inline-block
+			w-h 14px 14px
+			background-color #0055a7
+			border-radius 7px
+			margin-right 6px
+			transition all 0.5s ease-in-out
+			&.active
+				background-color #f39700
+				width 36px
+	.picWrap
+		p relative
+		& > a
+			d b
+			p absolute 0 auto auto 0
+			w-h 100% 391px
+
+.cooprations
+	border: 1px solid #f08212
+	margin: 30px auto 30px auto
+	height: 126px
+	.label
+		background-color #f08212
+		border-color #f08212
+		color #ffffff
+		font-weight bold
+	a
+		f l
+		w-h 110px 50px
+		line-height @height
+		text-align center
+		border 1px solid #ccc
+		margin 7px 0 0 7px
+		box()
+		box-pack center
+		box-align center
+		overflow hidden
+		&:hover
+			border-color #f08212
+		img
+			max-width 100%
+			max-height 100%
+			vertical-align middle
+
+.rtData
+	w-h 100% 400px
+	background-color #000
+	margin 20px auto
+	padding-top 1px
+	color #fff
+	font-size 12px
+	table
+		w-h 1182px
+		margin 10px
+		text-align center
+		tr
+			height 28px
+		td,th
+			border 1px solid #ff0000
+			vertical-align middle
+			padding 3px
+		th
+			font-weight bold
+			padding 1px
+			color #ffc
+	.tfoot
+		text-align right
+		font-weight bold
+		w-h 1176px 28px
+		line-height: @height
+		border 1px solid #f00
+		margin -11px auto 0 10px
+		padding-right 4px
+
+.friendLink
+	padding 10px
+	margin-bottom 20px
+	a
+		color #646262
+		font-size 14px
+		line-height 24px
+		margin-right 6px
+		&:hover
+			color #f08212
+
+.titleA
+	p relative
+	overflow hidden
+	height 28px
+	line-height @height
+	text-indent 10px
+	color #4a4a4a
+	font-weight bold
+	hr
+		border none
+		border-top solid #f08212 1px
+		margin -14px 0 0 90px
+	>em
+		d b
+		height 28px
+		width 4px
+		background-color #f08212
+		p absolute 0 auto auto 0
+
+.titleB
+	p relative
+	overflow hidden
+	height 28px
+	line-height @height
+	text-indent 10px
+	color #4a4a4a
+	font-weight bold
+	margin 20px auto
+	hr
+		border none
+		border-top solid #ccc 1px
+		margin 14px 0 0 0
+	.txt
+		p absolute 0 auto auto  50%;
+		w-h 120px 100%
+		background-color #fff
+		margin-left -(@width / 2)px
+
+
+aside
+	p fixed 50% 1px
+	z-index 999
+	text-align center
+	w-h 68px 380px
+	margin-top -(@height / 2)px
+	a
+		d b
+		border solid 1px #ccc
+		w-h 100% 20%
+		font-size 12px
+		color #e37c17
+		margin-top -1px
+		background-color rgba(255,255,255,.8)
+		&:nth-child(1)
+			color #00bfff
+		&:nth-child(2)
+			color #ff7a4d
+		&:nth-child(3)
+			color #514746
+		&:nth-child(4)
+			color #ffae00
+		&:nth-child(5)
+			color #169309
+		&:hover
+			color #fff
+			background-color rgba(227,124,23,.8)
+		i.fa
+			font-size 30px
+			margin 12px 0 0 0
+		p
+			line-height 20px
+
+footer
+	height 160px
+	background-color #8f0707
+	color #ffffff
+	.cWrap
+		p relative
+		height 100%
+		padding-top 1px
+	.cName
+		width: 100%
+		border-bottom solid #ffffff 1px
+		line-height 46px
+		margin 30px 0 10px 0
+		font-weight bold
+	address
+		line-height 20px
+	img.qrCode
+		width 146px
+		p absolute 8px 0
+
+
+.product
+	w-h auto 260px
+	border solid #ccc 1px
+	margin-top 10px
+	padding-left 20px
+	a
+		f l
+		margin 22px 22px 0 0
+		line-height 30px
+		text-align center
+		color #646262
+		img
+			w-h 205px 170px
+			border solid #cccccc 1px
+			padding 3px
+		&:hover
+			color #f08212
+			img
+				border-color #f08212
+
+.enterprise
+	@extend .product
+	border none
+	font-size 12px
+	height 370px
+	padding 0
+	a
+		w-h 20% auto
+		margin 0 0 20px 0
+		img
+			w-h 220px 110px
+			border dashed 1px #fff
+		&:hover
+			img
+				border-color

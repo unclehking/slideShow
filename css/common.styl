@@ -1,0 +1,57 @@
+baseFs = 10px;
+
+//浮动 f <l or r>
+f(args)
+	float: match('l',args)?left:right
+
+//position
+p(type,top=auto,right=auto,bottom=auto,left=auto)
+	position type
+	top top
+	right right
+	bottom bottom
+	left left
+
+//display  d <b or n>
+d(args)
+	display: match('^b',args) ? block : none
+
+//宽&高
+w-h(w,h=auto){
+	width w
+	height h
+}
+//display:box
+box()
+	display box
+	display -webkit-box
+	display -moz-box
+	display -ms-box
+
+//box-pack <start/center/end/justify>
+box-pack(type)
+	-webkit-box-pack type
+	-moz-box-pack type
+	box-pack type
+
+
+//box-align <start/center/end/justify>
+box-align(type)
+	-webkit-box-align type
+	-moz-box-align type
+	box-align type
+
+//transition动画
+transition(type,time,atype)
+	-webkit-transition type time atype
+	-moz-transition type time atype
+	transition type time atype
+
+a
+	text-decoration none
+.green
+	color green !important
+.red
+	color red !important
+.gold
+	color #FFFF37 !important
